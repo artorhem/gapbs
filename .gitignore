@@ -14,3 +14,15 @@ benchmark/out/*.out
 benchmark/graphs/*.sg
 benchmark/graphs/*.wsg
 benchmark/graphs/raw/*
+.idea/
+.vscode/
+cc_comp_gapbs.txt
+cc_comp_gapbs_empty.txt
+changed.txt
+cit-Patents.el
+cit-w.el
+cscope.out
+gap_bc.out
+sssp.run
+tags
+topo.out
