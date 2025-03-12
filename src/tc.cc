@@ -129,6 +129,7 @@ bool TCVerifier(const Graph &g, size_t test_total) {
 
 
 int main(int argc, char* argv[]) {
+  _flexograph_profile::MemoryCounter _memory_counter;
   CLApp cli(argc, argv, "triangle count");
   if (!cli.ParseArgs())
     return -1;

@@ -218,6 +218,7 @@ bool CCVerifier(const Graph &g, const pvector<NodeID> &comp) {
 
 
 int main(int argc, char* argv[]) {
+  _flexograph_profile::MemoryCounter _memory_counter;
   CLApp cli(argc, argv, "connected-components-afforest");
   if (!cli.ParseArgs())
     return -1;

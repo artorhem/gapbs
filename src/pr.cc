@@ -95,6 +95,7 @@ bool PRVerifier(const Graph &g, const pvector<ScoreT> &scores,
 
 
 int main(int argc, char* argv[]) {
+  _flexograph_profile::MemoryCounter _memory_counter;
   CLPageRank cli(argc, argv, "pagerank", 1e-4, 20);
   if (!cli.ParseArgs())
     return -1;
