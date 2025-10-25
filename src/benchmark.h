@@ -29,7 +29,7 @@ Various helper functions to ease writing of kernels
 
 // Default type signatures for commonly used types
 typedef int32_t NodeID;
-typedef int32_t WeightT;
+typedef double WeightT;
 typedef NodeWeight<NodeID, WeightT> WNode;
 
 typedef CSRGraph<NodeID> Graph;

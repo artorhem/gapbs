@@ -174,7 +174,10 @@ class Generator {
     #pragma omp parallel
     {
       rng_t_ rng;
-      UniDist<WeightT_, rng_t_> udist(254, rng);
+      //UniDist<WeightT_, rng_t_> udist(254, rng);
+      //We will use uint32_t directly for this distribution since the weights are being generated as ints. 
+      //We cannot use WeightT_ because the methods below are not defined for doubles.
+      UniDist<uint32_t, rng_t_, uint32_t> udist(254, rng);
       int64_t el_size = el.size();
       #pragma omp for
       for (int64_t block=0; block < el_size; block+=block_size) {
